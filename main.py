@@ -3,7 +3,7 @@ import time
 import sys
 from datetime import datetime, timedelta
 from config.config import download_dir, nuclei, attesa
-from scripts.functions import initialize_driver, SRM
+from functions.functions import initialize_driver, SRM
 
 def all_files_downloaded(missing_nuclei):
     return len(missing_nuclei) == 0
