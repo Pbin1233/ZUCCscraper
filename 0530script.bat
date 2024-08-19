@@ -19,9 +19,9 @@ set /a DIFF=LASTDAY - DAY
 :: Check if today is within the last three days of the month
 if %DIFF% lss 3 (
     echo Running the Python script because it is within the last three days of the month.
-    python C:\Users\pbpao\Desktop\Webscraper\main.py true
+    python "%~dp0main.py" true
 ) else (
     echo Not the last three days of the month. Exiting.
-    python C:\Users\pbpao\Desktop\Webscraper\main.py true
+    python "%~dp0main.py" true
 )
 pause
