@@ -1,3 +1,3 @@
 @echo off
-python C:\Users\pbpao\Desktop\Webscraper\main.py false
+python "%~dp0main.py" false
 pause
