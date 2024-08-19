@@ -3,7 +3,8 @@ import time
 import sys
 from datetime import datetime, timedelta
 from config.config import download_dir, nuclei, attesa
-from functions.functions import initialize_driver, SRM
+from functions.route import route
+from functions.driver_management import initialize_driver
 
 def all_files_downloaded(missing_nuclei):
     return len(missing_nuclei) == 0
@@ -42,7 +43,7 @@ def main(change_month):
             break
 
         for nucleo in missing_nuclei:
-            SRM(driver, nucleo, attesa[nuclei.index(nucleo)], change_month)
+            route(driver, nucleo, attesa[nuclei.index(nucleo)], change_month)
         
         # Wait for a short period before checking again
         time.sleep(10)

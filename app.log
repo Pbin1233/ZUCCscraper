@@ -1,0 +1,126 @@
+2024-08-19 19:11:20,149 - WDM - INFO - ====== WebDriver manager ======
+2024-08-19 19:11:20,750 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-19 19:11:20,779 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-19 19:11:20,807 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-19 19:11:21,801 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-19 19:11:21,802 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-19 19:11:42,145 - functions.driver_management - INFO - Azioni di Reparto button not found, proceeding to login
+2024-08-19 19:11:43,526 - functions.driver_management - INFO - Username entered
+2024-08-19 19:11:45,014 - functions.driver_management - INFO - Password entered
+2024-08-19 19:11:45,051 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-19 19:11:55,116 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-19 19:11:55,715 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-19 19:11:55,906 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-19 19:11:56,017 - functions.driver_management - INFO - Clicked on Stampa rilevazione mensile
+2024-08-19 19:11:58,056 - functions.driver_management - INFO - Clicked on Stampa anche note
+2024-08-19 19:11:58,101 - functions.driver_management - INFO - Selected Nucleo E
+2024-08-19 19:11:58,222 - functions.driver_management - INFO - Clicked on the print button
+2024-08-19 19:14:37,301 - functions.driver_management - INFO - Switched to the iframe
+2024-08-19 19:14:37,313 - functions.driver_management - INFO - PDF link found: https://pvc003.zucchettihc.it:4445/cba/result_files/20240819/CS_TerapieRaggMensile1724087568652.pdf
+2024-08-19 19:14:37,439 - functions.driver_management - INFO - PDF downloaded and saved as C:/Users/pbpao/Desktop/Stampe\Nucleo E.pdf
+2024-08-19 19:34:17,308 - WDM - INFO - ====== WebDriver manager ======
+2024-08-19 19:34:17,910 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-19 19:34:17,940 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-19 19:34:17,968 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-19 19:34:18,975 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-19 19:34:33,245 - WDM - INFO - ====== WebDriver manager ======
+2024-08-19 19:34:33,831 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-19 19:34:33,862 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-19 19:34:33,889 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-19 19:34:34,869 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-19 19:34:34,870 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-19 19:34:55,211 - functions.driver_management - INFO - Azioni di Reparto button not found, proceeding to login
+2024-08-19 19:34:55,802 - functions.driver_management - INFO - Username entered
+2024-08-19 19:34:57,290 - functions.driver_management - INFO - Password entered
+2024-08-19 19:34:57,327 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-19 19:40:04,647 - WDM - INFO - ====== WebDriver manager ======
+2024-08-19 19:40:05,252 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-19 19:40:05,279 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-19 19:40:05,304 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-19 19:40:06,313 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-19 19:40:06,313 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-19 19:40:26,654 - functions.driver_management - INFO - Azioni di Reparto button not found, proceeding to login
+2024-08-19 19:40:27,246 - functions.driver_management - INFO - Username entered
+2024-08-19 19:40:28,732 - functions.driver_management - INFO - Password entered
+2024-08-19 19:40:28,769 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-19 19:44:43,793 - WDM - INFO - ====== WebDriver manager ======
+2024-08-19 19:44:44,398 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-19 19:44:44,430 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-19 19:44:44,455 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-19 19:44:45,459 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-19 19:44:45,459 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-19 19:45:05,798 - functions.driver_management - INFO - Azioni di Reparto button not found, proceeding to login
+2024-08-19 19:45:06,394 - functions.driver_management - INFO - Username entered
+2024-08-19 19:45:07,878 - functions.driver_management - INFO - Password entered
+2024-08-19 19:45:07,917 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-19 19:47:38,951 - WDM - INFO - ====== WebDriver manager ======
+2024-08-19 19:47:39,557 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-19 19:47:39,585 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-19 19:47:39,610 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-19 19:47:40,600 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-19 19:47:40,601 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-19 19:48:00,940 - functions.driver_management - INFO - Azioni di Reparto button not found, proceeding to login
+2024-08-19 19:48:02,343 - functions.driver_management - INFO - Username entered
+2024-08-19 19:48:03,841 - functions.driver_management - INFO - Password entered
+2024-08-19 19:48:03,879 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-19 19:48:13,944 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-19 19:48:14,531 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-19 19:48:14,723 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-19 19:48:14,830 - functions.driver_management - INFO - Clicked on Stampa rilevazione mensile
+2024-08-19 19:48:16,868 - functions.driver_management - INFO - Clicked on Stampa anche note
+2024-08-19 19:48:16,918 - functions.driver_management - INFO - Selected Nucleo A
+2024-08-19 19:48:17,033 - functions.driver_management - INFO - Clicked on the print button
+2024-08-19 19:48:23,119 - functions.driver_management - ERROR - Unexpected error: name 'traceback' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 13, in savepdf
+    iframe = WebDriverWait(driver, Attesa).until(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x004C8923+23283]
+	(No symbol) [0x0048E934]
+	(No symbol) [0x003C0733]
+	(No symbol) [0x0039D2E3]
+	(No symbol) [0x0042A64F]
+	(No symbol) [0x0043C686]
+	(No symbol) [0x004241B6]
+	(No symbol) [0x003F8017]
+	(No symbol) [0x003F890D]
+	GetHandleVerifier [0x005BA5F3+1013699]
+	GetHandleVerifier [0x005C3E4C+1052700]
+	GetHandleVerifier [0x005BD4B4+1025668]
+	GetHandleVerifier [0x004EEA2B+179195]
+	(No symbol) [0x00496833]
+	(No symbol) [0x00493198]
+	(No symbol) [0x00493337]
+	(No symbol) [0x0048B4BE]
+	BaseThreadInitThunk [0x76AA7BA9+25]
+	RtlInitializeExceptionChain [0x774FC10B+107]
+	RtlClearBits [0x774FC08F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 95, in route
+    savepdf(driver, nucleo, Attesa, change_month)
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 43, in savepdf
+    log(f"Error during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")
+                                                                  ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+

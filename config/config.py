@@ -1,10 +1,13 @@
-# config.py
+from dotenv import load_dotenv
 import os
 
+# Load environment variables from .env file
+load_dotenv()
+
 # Configuration for download directory and Chrome user data directory
-download_dir = "C:/Users/pbpao/Desktop/Stampe"
-prossimo_mese_dir = os.path.join(download_dir, "Prossimo mese")  # New subfolder for 'Prossimo mese'
-user_data_dir = "C:/Users/pbpao/Desktop/ChromeProfile"
+download_dir = os.getenv('DOWNLOAD_DIR')
+prossimo_mese_dir = os.path.join(download_dir, "Prossimo mese")
+user_data_dir = os.getenv('USER_DATA_DIR')
 
 # Ensure the directories exist
 if not os.path.exists(download_dir):
@@ -18,8 +21,8 @@ if not os.path.exists(user_data_dir):
 url = 'https://pvc003.zucchettihc.it:4445/cba/login.html'
 
 # User credentials
-username = 'Terapia Vera'
-password = 'RBorromea2024'
+username = os.getenv('APP_USERNAME')
+password = os.getenv('PASSWORD')
 
 # Nuclei and their respective wait times
 nuclei = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'I']
