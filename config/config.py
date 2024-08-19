@@ -9,14 +9,6 @@ download_dir = os.getenv('DOWNLOAD_DIR')
 prossimo_mese_dir = os.path.join(download_dir, "Prossimo mese")
 user_data_dir = os.getenv('USER_DATA_DIR')
 
-# Ensure the directories exist
-if not os.path.exists(download_dir):
-    os.makedirs(download_dir)
-if not os.path.exists(prossimo_mese_dir):
-    os.makedirs(prossimo_mese_dir)
-if not os.path.exists(user_data_dir):
-    os.makedirs(user_data_dir)
-
 # URL for the login page
 url = 'https://pvc003.zucchettihc.it:4445/cba/login.html'
 

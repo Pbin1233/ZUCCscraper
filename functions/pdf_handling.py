@@ -23,6 +23,8 @@ def savepdf(driver, Nucleo, Attesa, change_month):
         log(f"PDF link found: {pdf_url}", "INFO")
 
         save_dir = prossimo_mese_dir if change_month else download_dir
+        if not os.path.exists(save_dir):
+            os.makedirs(save_dir)
 
         response = requests.get(pdf_url, verify=False)
         if response.status_code == 200:
