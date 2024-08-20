@@ -124,3 +124,2453 @@ Traceback (most recent call last):
                                                                   ^^^^^^^^^
 NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
 
+2024-08-20 12:13:07,648 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 12:13:08,438 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 12:13:08,708 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 12:13:09,762 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 12:13:09,863 - WDM - INFO - WebDriver version 127.0.6533.119 selected
+2024-08-20 12:13:09,866 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/127.0.6533.119/win32/chromedriver-win32.zip
+2024-08-20 12:13:09,866 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/127.0.6533.119/win32/chromedriver-win32.zip
+2024-08-20 12:13:09,943 - WDM - INFO - Driver downloading response is 200
+2024-08-20 12:13:10,740 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 12:13:10,851 - WDM - INFO - Driver has been saved in cache [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119]
+2024-08-20 12:13:12,225 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 12:13:12,226 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 12:13:32,582 - functions.driver_management - INFO - Azioni di Reparto button not found, proceeding to login
+2024-08-20 12:13:33,998 - functions.driver_management - INFO - Username entered
+2024-08-20 12:13:35,487 - functions.driver_management - INFO - Password entered
+2024-08-20 12:13:35,524 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 12:13:45,605 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 12:13:46,196 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 12:13:46,414 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 12:13:46,504 - functions.driver_management - INFO - Clicked on Stampa rilevazione mensile
+2024-08-20 12:13:48,872 - functions.driver_management - INFO - Clicked on Stampa anche note
+2024-08-20 12:13:48,919 - functions.driver_management - INFO - Selected Nucleo A
+2024-08-20 12:13:49,286 - functions.driver_management - INFO - Clicked on the print button
+2024-08-20 12:15:19,796 - functions.driver_management - ERROR - Unexpected error: name 'traceback' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 13, in savepdf
+    iframe = WebDriverWait(driver, Attesa).until(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00F88923+23283]
+	(No symbol) [0x00F4E934]
+	(No symbol) [0x00E80733]
+	(No symbol) [0x00EC326F]
+	(No symbol) [0x00EC34AB]
+	(No symbol) [0x00EFEE42]
+	(No symbol) [0x00EE4464]
+	(No symbol) [0x00EFCB8D]
+	(No symbol) [0x00EE41B6]
+	(No symbol) [0x00EB8017]
+	(No symbol) [0x00EB890D]
+	GetHandleVerifier [0x0107A5F3+1013699]
+	GetHandleVerifier [0x01083E4C+1052700]
+	GetHandleVerifier [0x0107D4B4+1025668]
+	GetHandleVerifier [0x00FAEA2B+179195]
+	(No symbol) [0x00F56833]
+	(No symbol) [0x00F53198]
+	(No symbol) [0x00F53337]
+	(No symbol) [0x00F4B4BE]
+	BaseThreadInitThunk [0x76407BA9+25]
+	RtlInitializeExceptionChain [0x7776C10B+107]
+	RtlClearBits [0x7776C08F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 95, in route
+    savepdf(driver, nucleo, Attesa, change_month)
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 41, in savepdf
+    log(f"Timeout during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")
+                                                                    ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+
+2024-08-20 12:15:24,797 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 12:15:35,086 - functions.driver_management - INFO - Azioni di Reparto button is present, clicking it
+2024-08-20 12:15:35,135 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 12:15:35,725 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 12:15:35,933 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 12:15:36,044 - functions.driver_management - INFO - Clicked on Stampa rilevazione mensile
+2024-08-20 12:15:38,084 - functions.driver_management - INFO - Clicked on Stampa anche note
+2024-08-20 12:15:38,129 - functions.driver_management - INFO - Selected Nucleo B
+2024-08-20 12:15:38,253 - functions.driver_management - INFO - Clicked on the print button
+2024-08-20 12:17:52,678 - functions.driver_management - ERROR - Unexpected error: name 'traceback' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 13, in savepdf
+    iframe = WebDriverWait(driver, Attesa).until(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x00F88923+23283]
+	(No symbol) [0x00F4E934]
+	(No symbol) [0x00E80733]
+	(No symbol) [0x00E5D2E3]
+	(No symbol) [0x00EEA64F]
+	(No symbol) [0x00EFC686]
+	(No symbol) [0x00EE41B6]
+	(No symbol) [0x00EB8017]
+	(No symbol) [0x00EB890D]
+	GetHandleVerifier [0x0107A5F3+1013699]
+	GetHandleVerifier [0x01083E4C+1052700]
+	GetHandleVerifier [0x0107D4B4+1025668]
+	GetHandleVerifier [0x00FAEA2B+179195]
+	(No symbol) [0x00F56833]
+	(No symbol) [0x00F53198]
+	(No symbol) [0x00F53337]
+	(No symbol) [0x00F4B4BE]
+	BaseThreadInitThunk [0x76407BA9+25]
+	RtlInitializeExceptionChain [0x7776C10B+107]
+	RtlClearBits [0x7776C08F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 95, in route
+    savepdf(driver, nucleo, Attesa, change_month)
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 45, in savepdf
+    log(f"Error during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")
+                                                                  ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+
+2024-08-20 12:17:57,679 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 12:49:07,077 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 12:49:08,039 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 12:49:08,073 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 12:49:08,098 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 12:49:09,216 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 12:49:09,217 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 12:49:29,553 - functions.driver_management - INFO - Azioni di Reparto button not found, proceeding to login
+2024-08-20 12:49:30,973 - functions.driver_management - INFO - Username entered
+2024-08-20 12:49:32,466 - functions.driver_management - INFO - Password entered
+2024-08-20 12:49:32,506 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 12:54:43,298 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 12:54:43,912 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 12:54:43,946 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 12:54:43,973 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 12:54:44,972 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 12:54:44,972 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 12:55:05,301 - functions.driver_management - INFO - Azioni di Reparto button not found, proceeding to login
+2024-08-20 12:55:06,686 - functions.driver_management - INFO - Username entered
+2024-08-20 12:55:08,175 - functions.driver_management - INFO - Password entered
+2024-08-20 12:55:08,213 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 12:59:00,424 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 12:59:01,041 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 12:59:01,074 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 12:59:01,101 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 12:59:02,114 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 12:59:02,114 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 12:59:22,446 - functions.driver_management - INFO - Azioni di Reparto button not found, proceeding to login
+2024-08-20 12:59:23,832 - functions.driver_management - INFO - Username entered
+2024-08-20 12:59:25,328 - functions.driver_management - INFO - Password entered
+2024-08-20 12:59:25,368 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 16:22:09,724 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 16:22:10,387 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 16:22:10,437 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 16:22:10,466 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 16:22:11,599 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 16:22:11,599 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 16:22:31,934 - functions.driver_management - INFO - Azioni di Reparto button not found, proceeding to login
+2024-08-20 16:22:33,349 - functions.driver_management - INFO - Username entered
+2024-08-20 16:22:34,837 - functions.driver_management - INFO - Password entered
+2024-08-20 16:22:34,874 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 16:22:44,931 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 16:22:45,529 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 16:22:45,728 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 16:22:46,050 - functions.driver_management - INFO - Clicked on radio button associated with label 'Stampa rilevazione mensile'
+2024-08-20 16:22:48,086 - functions.driver_management - INFO - Clicked on Stampa anche note
+2024-08-20 16:22:48,130 - functions.driver_management - INFO - Selected Nucleo A
+2024-08-20 16:22:48,487 - functions.driver_management - INFO - Clicked on the print button
+2024-08-20 16:22:58,638 - functions.driver_management - ERROR - Unexpected error: name 'traceback' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 13, in savepdf
+    iframe = WebDriverWait(driver, Attesa).until(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x0108D2E3]
+	(No symbol) [0x0111A64F]
+	(No symbol) [0x0112C686]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 102, in route
+    savepdf(driver, nucleo, Attesa, change_month)
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 45, in savepdf
+    log(f"Error during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")
+                                                                  ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+
+2024-08-20 16:32:26,105 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 16:32:26,705 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 16:32:27,741 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 16:32:27,765 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 16:32:28,776 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 16:32:28,777 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 16:32:49,106 - functions.driver_management - INFO - Azioni di Reparto button not found, proceeding to login
+2024-08-20 16:32:50,490 - functions.driver_management - INFO - Username entered
+2024-08-20 16:32:51,979 - functions.driver_management - INFO - Password entered
+2024-08-20 16:32:52,017 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 16:33:02,080 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 16:33:02,669 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 16:33:02,869 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 16:33:03,068 - functions.driver_management - INFO - Clicked on 'Stampa rilevazione mensile'
+2024-08-20 16:33:05,080 - functions.driver_management - INFO - Checkbox with name 'noteMensili' has ID 'checkbox-1350-inputEl'
+2024-08-20 16:33:05,108 - functions.driver_management - INFO - Clicked on checkbox with ID 'checkbox-1350-inputEl'
+2024-08-20 16:33:05,155 - functions.driver_management - INFO - Selected Nucleo A
+2024-08-20 16:33:05,272 - functions.driver_management - INFO - Clicked on the print button
+2024-08-20 16:33:18,417 - functions.driver_management - ERROR - Unexpected error: name 'traceback' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 13, in savepdf
+    iframe = WebDriverWait(driver, Attesa).until(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x0108D2E3]
+	(No symbol) [0x0111A64F]
+	(No symbol) [0x0112C686]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 108, in route
+    savepdf(driver, nucleo, Attesa, change_month)
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 45, in savepdf
+    log(f"Error during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")
+                                                                  ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+
+2024-08-20 16:33:23,418 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 16:44:07,085 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 16:44:07,687 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 16:44:07,930 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 16:44:07,956 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 16:44:09,029 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 16:44:09,030 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 16:44:29,369 - functions.driver_management - INFO - Azioni di Reparto button not found, proceeding to login
+2024-08-20 16:44:30,751 - functions.driver_management - INFO - Username entered
+2024-08-20 16:44:32,240 - functions.driver_management - INFO - Password entered
+2024-08-20 16:44:32,276 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 16:44:42,334 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 16:44:42,946 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 16:44:43,131 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 16:44:43,509 - functions.driver_management - INFO - Clicked on 'Stampa rilevazione mensile'
+2024-08-20 16:44:45,519 - functions.driver_management - INFO - Checkbox with name 'noteMensili' has ID 'checkbox-1350-inputEl'
+2024-08-20 16:44:45,547 - functions.driver_management - INFO - Clicked on checkbox with ID 'checkbox-1350-inputEl'
+2024-08-20 16:44:45,592 - functions.driver_management - INFO - Selected Nucleo A
+2024-08-20 16:44:45,711 - functions.driver_management - INFO - Clicked on the print button
+2024-08-20 16:44:50,274 - functions.driver_management - ERROR - Unexpected error: name 'traceback' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 13, in savepdf
+    iframe = WebDriverWait(driver, Attesa).until(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x0108D2E3]
+	(No symbol) [0x0111A64F]
+	(No symbol) [0x0112C686]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 115, in route
+    savepdf(driver, nucleo, Attesa, change_month)
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 45, in savepdf
+    log(f"Error during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")
+                                                                  ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+
+2024-08-20 16:54:58,015 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 16:54:58,628 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 16:54:58,656 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 16:54:58,681 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 16:54:59,677 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 16:54:59,677 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 16:55:20,022 - functions.driver_management - INFO - Azioni di Reparto button not found, proceeding to login
+2024-08-20 16:55:21,401 - functions.driver_management - INFO - Username entered
+2024-08-20 16:55:22,886 - functions.driver_management - INFO - Password entered
+2024-08-20 16:55:22,922 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 16:55:59,525 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 16:56:00,111 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 16:56:00,141 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 16:56:00,165 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 16:56:01,229 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 16:56:01,229 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 16:56:11,486 - functions.driver_management - INFO - The 'username' element is visible on the page.
+2024-08-20 16:57:41,326 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 16:57:41,928 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 16:57:41,958 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 16:57:41,987 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 16:57:42,989 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 16:57:42,989 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 16:57:53,236 - functions.driver_management - INFO - The 'username' element is visible on the page.
+2024-08-20 16:58:03,331 - functions.driver_management - INFO - Azioni di Reparto button not found, proceeding to login
+2024-08-20 16:58:04,711 - functions.driver_management - INFO - Username entered
+2024-08-20 16:58:06,202 - functions.driver_management - INFO - Password entered
+2024-08-20 16:58:06,242 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 16:58:16,300 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 16:58:16,891 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 16:58:17,106 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 16:58:17,429 - functions.driver_management - INFO - Clicked on 'Stampa rilevazione mensile'
+2024-08-20 16:58:29,665 - functions.driver_management - ERROR - Timeout while trying to find element: Message: 
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F326F]
+	(No symbol) [0x010F34AB]
+	(No symbol) [0x0112EE42]
+	(No symbol) [0x01114464]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 89, in route
+    checkbox_id = WebDriverWait(driver, 10).until(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F326F]
+	(No symbol) [0x010F34AB]
+	(No symbol) [0x0112EE42]
+	(No symbol) [0x01114464]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+2024-08-20 16:58:34,667 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 16:58:44,882 - functions.driver_management - INFO - The 'username' element is not visible on the page.
+2024-08-20 16:58:44,951 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 16:58:45,604 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 16:58:46,038 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 16:58:46,281 - functions.driver_management - INFO - Clicked on 'Stampa rilevazione mensile'
+2024-08-20 16:58:48,292 - functions.driver_management - INFO - Checkbox with name 'noteMensili' has ID 'checkbox-1350-inputEl'
+2024-08-20 16:58:48,319 - functions.driver_management - INFO - Clicked on checkbox with ID 'checkbox-1350-inputEl'
+2024-08-20 16:58:48,366 - functions.driver_management - INFO - Selected Nucleo B
+2024-08-20 16:58:48,489 - functions.driver_management - INFO - Clicked on the print button
+2024-08-20 16:58:55,579 - functions.driver_management - ERROR - Unexpected error: name 'traceback' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 13, in savepdf
+    iframe = WebDriverWait(driver, Attesa).until(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x0108D2E3]
+	(No symbol) [0x0111A64F]
+	(No symbol) [0x0112C686]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 121, in route
+    savepdf(driver, nucleo, Attesa, change_month)
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 45, in savepdf
+    log(f"Error during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")
+                                                                  ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+
+2024-08-20 17:06:48,084 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 17:06:48,695 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:06:48,726 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:06:48,752 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 17:06:49,763 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 17:06:49,763 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:06:50,517 - functions.driver_management - INFO - Page has finished loading. 'Username' field located.
+2024-08-20 17:06:51,918 - functions.driver_management - INFO - Username entered
+2024-08-20 17:06:53,413 - functions.driver_management - INFO - Password entered
+2024-08-20 17:06:53,452 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 17:07:08,452 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:07:39,179 - functions.driver_management - ERROR - Timeout waiting for the 'username' field not loaded. Page might not have loaded correctly.
+2024-08-20 17:07:39,179 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:08:09,676 - functions.driver_management - ERROR - Timeout waiting for the 'username' field not loaded. Page might not have loaded correctly.
+2024-08-20 17:08:09,676 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:09:10,073 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 17:09:10,704 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:09:10,732 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:09:10,757 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 17:09:11,817 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 17:09:11,817 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:09:12,668 - functions.driver_management - INFO - Page has finished loading. 'Username' field located.
+2024-08-20 17:09:14,090 - functions.driver_management - INFO - Username entered
+2024-08-20 17:09:15,593 - functions.driver_management - INFO - Password entered
+2024-08-20 17:09:15,632 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 17:09:30,634 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:10:01,351 - functions.driver_management - ERROR - Timeout waiting for the 'username' field not loaded. Page might not have loaded correctly.
+2024-08-20 17:10:01,351 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:10:31,823 - functions.driver_management - ERROR - Timeout waiting for the 'username' field not loaded. Page might not have loaded correctly.
+2024-08-20 17:10:31,823 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:11:02,400 - functions.driver_management - ERROR - Timeout waiting for the 'username' field not loaded. Page might not have loaded correctly.
+2024-08-20 17:11:02,400 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:11:32,657 - functions.driver_management - ERROR - Timeout waiting for the 'username' field not loaded. Page might not have loaded correctly.
+2024-08-20 17:11:32,657 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:12:02,963 - functions.driver_management - ERROR - Timeout waiting for the 'username' field not loaded. Page might not have loaded correctly.
+2024-08-20 17:12:02,963 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:12:33,244 - functions.driver_management - ERROR - Timeout waiting for the 'username' field not loaded. Page might not have loaded correctly.
+2024-08-20 17:12:33,244 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:13:03,929 - functions.driver_management - ERROR - Timeout waiting for the 'username' field not loaded. Page might not have loaded correctly.
+2024-08-20 17:13:13,929 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:13:44,586 - functions.driver_management - ERROR - Timeout waiting for the 'username' field not loaded. Page might not have loaded correctly.
+2024-08-20 17:13:44,586 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:15:48,109 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 17:15:48,722 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:15:48,758 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:15:48,782 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 17:15:49,764 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 17:15:49,765 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:15:50,531 - functions.driver_management - INFO - Username field located on the page.
+2024-08-20 17:15:51,941 - functions.driver_management - INFO - Username entered
+2024-08-20 17:15:53,472 - functions.driver_management - INFO - Password entered
+2024-08-20 17:15:53,513 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 17:16:08,514 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:16:09,735 - functions.driver_management - INFO - Username field located on the page.
+2024-08-20 17:16:09,745 - functions.driver_management - INFO - Username field is not visible, assuming user is already logged in. Proceeding with post-login operations.
+2024-08-20 17:16:16,285 - functions.driver_management - ERROR - Unexpected error: Message: element click intercepted: Element <span id="button-1119-btnEl" data-ref="btnEl" role="presentation" unselectable="on" style="" class="x-btn-button x-btn-button-default-toolbar-large x-btn-text  x-btn-icon x-btn-icon-left x-btn-button-center ">...</span> is not clickable at point (518, 66). Other element would receive the click: <div role="presentation" class="x-mask x-border-box x-mask-fixed" id="ext-element-27" style="z-index: 50000;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F91C7]
+	(No symbol) [0x010F75D9]
+	(No symbol) [0x010F54CB]
+	(No symbol) [0x010F4AAF]
+	(No symbol) [0x010E99EF]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x010E9485]
+	(No symbol) [0x011146B4]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 69, in post_login_operations
+    azionib.click()
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span id="button-1119-btnEl" data-ref="btnEl" role="presentation" unselectable="on" style="" class="x-btn-button x-btn-button-default-toolbar-large x-btn-text  x-btn-icon x-btn-icon-left x-btn-button-center ">...</span> is not clickable at point (518, 66). Other element would receive the click: <div role="presentation" class="x-mask x-border-box x-mask-fixed" id="ext-element-27" style="z-index: 50000;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F91C7]
+	(No symbol) [0x010F75D9]
+	(No symbol) [0x010F54CB]
+	(No symbol) [0x010F4AAF]
+	(No symbol) [0x010E99EF]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x010E9485]
+	(No symbol) [0x011146B4]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+2024-08-20 17:16:21,286 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:16:22,129 - functions.driver_management - INFO - Username field located on the page.
+2024-08-20 17:16:22,139 - functions.driver_management - INFO - Username field is not visible, assuming user is already logged in. Proceeding with post-login operations.
+2024-08-20 17:16:27,442 - functions.driver_management - ERROR - Unexpected error: 'NoneType' object has no attribute 'is_displayed'
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 65, in post_login_operations
+    azionib = WebDriverWait(driver, 15).until(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+                      ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+
+2024-08-20 17:16:32,443 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:19:15,616 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 17:19:16,231 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:19:16,261 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:19:16,302 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 17:19:17,291 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 17:19:17,292 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:19:18,660 - functions.driver_management - INFO - Username field located on the page.
+2024-08-20 17:19:20,066 - functions.driver_management - INFO - Username entered
+2024-08-20 17:19:21,556 - functions.driver_management - INFO - Password entered
+2024-08-20 17:19:21,594 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 17:19:36,596 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:19:37,321 - functions.driver_management - INFO - Username field located on the page.
+2024-08-20 17:19:37,331 - functions.driver_management - INFO - Username field is not visible, assuming user is already logged in. Proceeding with post-login operations.
+2024-08-20 17:19:41,423 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 17:19:51,673 - functions.driver_management - ERROR - Timeout while trying to find element: Message: 
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F326F]
+	(No symbol) [0x010F34AB]
+	(No symbol) [0x0112EE42]
+	(No symbol) [0x01114464]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 73, in post_login_operations
+    magnifying_glass_icon = WebDriverWait(driver, 10).until(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F326F]
+	(No symbol) [0x010F34AB]
+	(No symbol) [0x0112EE42]
+	(No symbol) [0x01114464]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+2024-08-20 17:19:56,674 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:19:57,449 - functions.driver_management - INFO - Username field located on the page.
+2024-08-20 17:19:57,457 - functions.driver_management - INFO - Username field is not visible, assuming user is already logged in. Proceeding with post-login operations.
+2024-08-20 17:20:03,091 - functions.driver_management - ERROR - Unexpected error: Message: element click intercepted: Element <span id="button-1119-btnEl" data-ref="btnEl" role="presentation" unselectable="on" style="" class="x-btn-button x-btn-button-default-toolbar-large x-btn-text  x-btn-icon x-btn-icon-left x-btn-button-center ">...</span> is not clickable at point (518, 66). Other element would receive the click: <div role="presentation" class="x-mask x-border-box x-mask-fixed" id="ext-element-27" style="z-index: 50000;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F91C7]
+	(No symbol) [0x010F75D9]
+	(No symbol) [0x010F54CB]
+	(No symbol) [0x010F4AAF]
+	(No symbol) [0x010E99EF]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x010E9485]
+	(No symbol) [0x011146B4]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 70, in post_login_operations
+    azionib.click()
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span id="button-1119-btnEl" data-ref="btnEl" role="presentation" unselectable="on" style="" class="x-btn-button x-btn-button-default-toolbar-large x-btn-text  x-btn-icon x-btn-icon-left x-btn-button-center ">...</span> is not clickable at point (518, 66). Other element would receive the click: <div role="presentation" class="x-mask x-border-box x-mask-fixed" id="ext-element-27" style="z-index: 50000;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F91C7]
+	(No symbol) [0x010F75D9]
+	(No symbol) [0x010F54CB]
+	(No symbol) [0x010F4AAF]
+	(No symbol) [0x010E99EF]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x010E9485]
+	(No symbol) [0x011146B4]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+2024-08-20 17:20:08,092 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:20:08,757 - functions.driver_management - INFO - Username field located on the page.
+2024-08-20 17:20:08,766 - functions.driver_management - INFO - Username field is not visible, assuming user is already logged in. Proceeding with post-login operations.
+2024-08-20 17:20:14,140 - functions.driver_management - ERROR - Unexpected error: Message: element click intercepted: Element <span id="button-1119-btnEl" data-ref="btnEl" role="presentation" unselectable="on" style="" class="x-btn-button x-btn-button-default-toolbar-large x-btn-text  x-btn-icon x-btn-icon-left x-btn-button-center ">...</span> is not clickable at point (518, 66). Other element would receive the click: <div role="presentation" class="x-mask x-border-box x-mask-fixed" id="ext-element-27" style="z-index: 50000;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F91C7]
+	(No symbol) [0x010F75D9]
+	(No symbol) [0x010F54CB]
+	(No symbol) [0x010F4AAF]
+	(No symbol) [0x010E99EF]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x010E9485]
+	(No symbol) [0x011146B4]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 70, in post_login_operations
+    azionib.click()
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span id="button-1119-btnEl" data-ref="btnEl" role="presentation" unselectable="on" style="" class="x-btn-button x-btn-button-default-toolbar-large x-btn-text  x-btn-icon x-btn-icon-left x-btn-button-center ">...</span> is not clickable at point (518, 66). Other element would receive the click: <div role="presentation" class="x-mask x-border-box x-mask-fixed" id="ext-element-27" style="z-index: 50000;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F91C7]
+	(No symbol) [0x010F75D9]
+	(No symbol) [0x010F54CB]
+	(No symbol) [0x010F4AAF]
+	(No symbol) [0x010E99EF]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x010E9485]
+	(No symbol) [0x011146B4]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+2024-08-20 17:20:19,142 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:20:19,852 - functions.driver_management - INFO - Username field located on the page.
+2024-08-20 17:20:19,860 - functions.driver_management - INFO - Username field is not visible, assuming user is already logged in. Proceeding with post-login operations.
+2024-08-20 17:20:24,572 - functions.driver_management - ERROR - Unexpected error: Message: element click intercepted: Element <span id="button-1119-btnEl" data-ref="btnEl" role="presentation" unselectable="on" style="" class="x-btn-button x-btn-button-default-toolbar-large x-btn-text  x-btn-icon x-btn-icon-left x-btn-button-center ">...</span> is not clickable at point (518, 66). Other element would receive the click: <div role="presentation" class="x-mask x-border-box x-mask-fixed" id="ext-element-27" style="z-index: 50000;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F91C7]
+	(No symbol) [0x010F75D9]
+	(No symbol) [0x010F54CB]
+	(No symbol) [0x010F4AAF]
+	(No symbol) [0x010E99EF]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x010E9485]
+	(No symbol) [0x011146B4]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 70, in post_login_operations
+    azionib.click()
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span id="button-1119-btnEl" data-ref="btnEl" role="presentation" unselectable="on" style="" class="x-btn-button x-btn-button-default-toolbar-large x-btn-text  x-btn-icon x-btn-icon-left x-btn-button-center ">...</span> is not clickable at point (518, 66). Other element would receive the click: <div role="presentation" class="x-mask x-border-box x-mask-fixed" id="ext-element-27" style="z-index: 50000;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F91C7]
+	(No symbol) [0x010F75D9]
+	(No symbol) [0x010F54CB]
+	(No symbol) [0x010F4AAF]
+	(No symbol) [0x010E99EF]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x010E9485]
+	(No symbol) [0x011146B4]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+2024-08-20 17:20:29,573 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:21:49,822 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 17:21:50,433 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:21:50,465 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:21:50,511 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 17:21:51,525 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 17:21:51,526 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:21:56,765 - functions.driver_management - INFO - Username field located on the page.
+2024-08-20 17:21:58,158 - functions.driver_management - INFO - Username entered
+2024-08-20 17:21:59,658 - functions.driver_management - INFO - Password entered
+2024-08-20 17:21:59,697 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 17:22:14,698 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:22:19,957 - functions.driver_management - INFO - Username field located on the page.
+2024-08-20 17:22:19,991 - functions.driver_management - INFO - Username field is not visible, assuming user is already logged in. Proceeding with post-login operations.
+2024-08-20 17:22:21,049 - functions.driver_management - ERROR - Unexpected error: Message: element click intercepted: Element <span id="button-1119-btnEl" data-ref="btnEl" role="presentation" unselectable="on" style="" class="x-btn-button x-btn-button-default-toolbar-large x-btn-text  x-btn-icon x-btn-icon-left x-btn-button-center ">...</span> is not clickable at point (518, 66). Other element would receive the click: <div role="presentation" class="x-mask x-border-box x-mask-fixed" id="ext-element-27" style="z-index: 50000;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F91C7]
+	(No symbol) [0x010F75D9]
+	(No symbol) [0x010F54CB]
+	(No symbol) [0x010F4AAF]
+	(No symbol) [0x010E99EF]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x010E9485]
+	(No symbol) [0x011146B4]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 71, in post_login_operations
+    azionib.click()
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span id="button-1119-btnEl" data-ref="btnEl" role="presentation" unselectable="on" style="" class="x-btn-button x-btn-button-default-toolbar-large x-btn-text  x-btn-icon x-btn-icon-left x-btn-button-center ">...</span> is not clickable at point (518, 66). Other element would receive the click: <div role="presentation" class="x-mask x-border-box x-mask-fixed" id="ext-element-27" style="z-index: 50000;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F91C7]
+	(No symbol) [0x010F75D9]
+	(No symbol) [0x010F54CB]
+	(No symbol) [0x010F4AAF]
+	(No symbol) [0x010E99EF]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x010E9485]
+	(No symbol) [0x011146B4]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+2024-08-20 17:22:26,050 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:22:31,289 - functions.driver_management - INFO - Username field located on the page.
+2024-08-20 17:22:31,737 - functions.driver_management - INFO - Username field is not visible, assuming user is already logged in. Proceeding with post-login operations.
+2024-08-20 17:22:31,926 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 17:22:32,511 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 17:22:32,712 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 17:22:32,910 - functions.driver_management - INFO - Clicked on 'Stampa rilevazione mensile'
+2024-08-20 17:22:34,922 - functions.driver_management - INFO - Checkbox with name 'noteMensili' has ID 'checkbox-1350-inputEl'
+2024-08-20 17:22:34,951 - functions.driver_management - INFO - Clicked on checkbox with ID 'checkbox-1350-inputEl'
+2024-08-20 17:22:34,999 - functions.driver_management - INFO - Selected Nucleo C
+2024-08-20 17:22:35,124 - functions.driver_management - INFO - Clicked on the print button
+2024-08-20 17:23:06,432 - functions.driver_management - ERROR - Unexpected error: name 'traceback' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 13, in savepdf
+    iframe = WebDriverWait(driver, Attesa).until(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x0108D2E3]
+	(No symbol) [0x0111A64F]
+	(No symbol) [0x0112C686]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 129, in post_login_operations
+    savepdf(driver, nucleo, Attesa, change_month)
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 45, in savepdf
+    log(f"Error during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")
+                                                                  ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+
+2024-08-20 17:23:12,193 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 17:23:12,786 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:23:12,815 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:23:12,840 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 17:23:13,848 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 17:23:13,848 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:23:19,086 - functions.driver_management - INFO - Username field located on the page.
+2024-08-20 17:23:20,500 - functions.driver_management - INFO - Username entered
+2024-08-20 17:23:21,986 - functions.driver_management - INFO - Password entered
+2024-08-20 17:23:22,021 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 17:23:37,023 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:23:42,233 - functions.driver_management - INFO - Username field located on the page.
+2024-08-20 17:23:42,243 - functions.driver_management - INFO - Username field is not visible, assuming user is already logged in. Proceeding with post-login operations.
+2024-08-20 17:23:43,204 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 17:23:43,836 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 17:23:43,998 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 17:23:44,189 - functions.driver_management - INFO - Clicked on 'Stampa rilevazione mensile'
+2024-08-20 17:23:46,202 - functions.driver_management - INFO - Checkbox with name 'noteMensili' has ID 'checkbox-1350-inputEl'
+2024-08-20 17:23:46,235 - functions.driver_management - INFO - Clicked on checkbox with ID 'checkbox-1350-inputEl'
+2024-08-20 17:23:46,283 - functions.driver_management - INFO - Selected Nucleo B
+2024-08-20 17:23:46,414 - functions.driver_management - INFO - Clicked on the print button
+2024-08-20 17:24:03,592 - functions.driver_management - ERROR - Unexpected error: name 'traceback' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 13, in savepdf
+    iframe = WebDriverWait(driver, Attesa).until(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x0108D2E3]
+	(No symbol) [0x0111A64F]
+	(No symbol) [0x0112C686]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 129, in post_login_operations
+    savepdf(driver, nucleo, Attesa, change_month)
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 45, in savepdf
+    log(f"Error during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")
+                                                                  ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+
+2024-08-20 17:29:34,313 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 17:29:34,925 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:29:34,954 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:29:34,981 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 17:29:35,984 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 17:29:35,985 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:29:41,224 - functions.driver_management - INFO - Username field located on the page.
+2024-08-20 17:29:42,611 - functions.driver_management - INFO - Username entered
+2024-08-20 17:29:44,097 - functions.driver_management - INFO - Password entered
+2024-08-20 17:29:44,135 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 17:29:59,136 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:30:04,682 - functions.driver_management - INFO - Username field located on the page.
+2024-08-20 17:30:04,724 - functions.driver_management - INFO - Username field is not visible, assuming user is already logged in. Proceeding with post-login operations.
+2024-08-20 17:30:05,771 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 17:30:06,415 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 17:30:06,584 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 17:30:06,902 - functions.driver_management - INFO - Clicked on 'Stampa rilevazione mensile'
+2024-08-20 17:30:08,916 - functions.driver_management - INFO - Checkbox with name 'noteMensili' has ID 'checkbox-1350-inputEl'
+2024-08-20 17:30:08,952 - functions.driver_management - INFO - Clicked on checkbox with ID 'checkbox-1350-inputEl'
+2024-08-20 17:30:09,003 - functions.driver_management - INFO - Selected Nucleo B
+2024-08-20 17:30:09,356 - functions.driver_management - INFO - Clicked on the print button
+2024-08-20 17:30:12,913 - functions.driver_management - ERROR - Unexpected error: name 'traceback' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 13, in savepdf
+    iframe = WebDriverWait(driver, Attesa).until(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x0108D2E3]
+	(No symbol) [0x0111A64F]
+	(No symbol) [0x0112C686]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 129, in post_login_operations
+    savepdf(driver, nucleo, Attesa, change_month)
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 45, in savepdf
+    log(f"Error during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")
+                                                                  ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+
+2024-08-20 17:39:24,364 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 17:39:24,975 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:39:25,006 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:39:25,033 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 17:39:26,029 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 17:39:26,029 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:39:36,326 - functions.driver_management - INFO - Username field is visible, proceeding with login operations.
+2024-08-20 17:39:37,711 - functions.driver_management - INFO - Username entered
+2024-08-20 17:39:39,194 - functions.driver_management - INFO - Password entered
+2024-08-20 17:39:39,230 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 17:39:54,232 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:39:59,574 - functions.driver_management - INFO - Azioni di Reparto button is present. User is already logged in. Proceeding with post-login operations.
+2024-08-20 17:40:00,735 - functions.driver_management - ERROR - Unexpected error: Message: element click intercepted: Element <span id="button-1119-btnEl" data-ref="btnEl" role="presentation" unselectable="on" style="" class="x-btn-button x-btn-button-default-toolbar-large x-btn-text  x-btn-icon x-btn-icon-left x-btn-button-center ">...</span> is not clickable at point (518, 66). Other element would receive the click: <div role="presentation" class="x-mask x-border-box x-mask-fixed" id="ext-element-27" style="z-index: 50000;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F91C7]
+	(No symbol) [0x010F75D9]
+	(No symbol) [0x010F54CB]
+	(No symbol) [0x010F4AAF]
+	(No symbol) [0x010E99EF]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x010E9485]
+	(No symbol) [0x011146B4]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 85, in post_login_operations
+    azionib.click()
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span id="button-1119-btnEl" data-ref="btnEl" role="presentation" unselectable="on" style="" class="x-btn-button x-btn-button-default-toolbar-large x-btn-text  x-btn-icon x-btn-icon-left x-btn-button-center ">...</span> is not clickable at point (518, 66). Other element would receive the click: <div role="presentation" class="x-mask x-border-box x-mask-fixed" id="ext-element-27" style="z-index: 50000;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F91C7]
+	(No symbol) [0x010F75D9]
+	(No symbol) [0x010F54CB]
+	(No symbol) [0x010F4AAF]
+	(No symbol) [0x010E99EF]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x010E9485]
+	(No symbol) [0x011146B4]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+2024-08-20 17:40:05,737 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:40:11,450 - functions.driver_management - INFO - Azioni di Reparto button is present. User is already logged in. Proceeding with post-login operations.
+2024-08-20 17:40:11,601 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 17:40:12,208 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 17:40:12,401 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 17:40:12,594 - functions.driver_management - INFO - Clicked on 'Stampa rilevazione mensile'
+2024-08-20 17:40:14,604 - functions.driver_management - INFO - Checkbox with name 'noteMensili' has ID 'checkbox-1350-inputEl'
+2024-08-20 17:40:14,633 - functions.driver_management - INFO - Clicked on checkbox with ID 'checkbox-1350-inputEl'
+2024-08-20 17:40:14,681 - functions.driver_management - INFO - Selected Nucleo C
+2024-08-20 17:40:14,796 - functions.driver_management - INFO - Clicked on the print button
+2024-08-20 17:40:18,854 - functions.driver_management - ERROR - Unexpected error: name 'traceback' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 13, in savepdf
+    iframe = WebDriverWait(driver, Attesa).until(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x0108D2E3]
+	(No symbol) [0x0111A64F]
+	(No symbol) [0x0112C686]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 143, in post_login_operations
+    savepdf(driver, nucleo, Attesa, change_month)
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 45, in savepdf
+    log(f"Error during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")
+                                                                  ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+
+2024-08-20 17:41:57,515 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 17:41:58,122 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:41:58,150 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:41:58,174 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 17:41:59,172 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 17:41:59,173 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:42:09,470 - functions.driver_management - INFO - Username field is visible, proceeding with login operations.
+2024-08-20 17:42:10,854 - functions.driver_management - INFO - Username entered
+2024-08-20 17:42:12,337 - functions.driver_management - INFO - Password entered
+2024-08-20 17:42:12,374 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 17:42:27,375 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:42:33,054 - functions.driver_management - INFO - Azioni di Reparto button is present. User is already logged in. Proceeding with post-login operations.
+2024-08-20 17:42:34,207 - functions.driver_management - ERROR - Unexpected error: Message: element click intercepted: Element <span id="button-1119-btnEl" data-ref="btnEl" role="presentation" unselectable="on" style="" class="x-btn-button x-btn-button-default-toolbar-large x-btn-text  x-btn-icon x-btn-icon-left x-btn-button-center ">...</span> is not clickable at point (518, 66). Other element would receive the click: <div role="presentation" class="x-mask x-border-box x-mask-fixed" id="ext-element-27" style="z-index: 50000;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F91C7]
+	(No symbol) [0x010F75D9]
+	(No symbol) [0x010F54CB]
+	(No symbol) [0x010F4AAF]
+	(No symbol) [0x010E99EF]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x010E9485]
+	(No symbol) [0x011146B4]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 85, in post_login_operations
+    azionib.click()
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span id="button-1119-btnEl" data-ref="btnEl" role="presentation" unselectable="on" style="" class="x-btn-button x-btn-button-default-toolbar-large x-btn-text  x-btn-icon x-btn-icon-left x-btn-button-center ">...</span> is not clickable at point (518, 66). Other element would receive the click: <div role="presentation" class="x-mask x-border-box x-mask-fixed" id="ext-element-27" style="z-index: 50000;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F91C7]
+	(No symbol) [0x010F75D9]
+	(No symbol) [0x010F54CB]
+	(No symbol) [0x010F4AAF]
+	(No symbol) [0x010E99EF]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x010E9485]
+	(No symbol) [0x011146B4]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+2024-08-20 17:42:39,209 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:42:44,409 - functions.driver_management - INFO - Azioni di Reparto button is present. User is already logged in. Proceeding with post-login operations.
+2024-08-20 17:42:45,510 - functions.driver_management - ERROR - Unexpected error: Message: element click intercepted: Element <span id="button-1119-btnEl" data-ref="btnEl" role="presentation" unselectable="on" style="" class="x-btn-button x-btn-button-default-toolbar-large x-btn-text  x-btn-icon x-btn-icon-left x-btn-button-center ">...</span> is not clickable at point (518, 66). Other element would receive the click: <div role="presentation" class="x-mask x-border-box x-mask-fixed" id="ext-element-27" style="z-index: 50000;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F91C7]
+	(No symbol) [0x010F75D9]
+	(No symbol) [0x010F54CB]
+	(No symbol) [0x010F4AAF]
+	(No symbol) [0x010E99EF]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x010E9485]
+	(No symbol) [0x011146B4]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 85, in post_login_operations
+    azionib.click()
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span id="button-1119-btnEl" data-ref="btnEl" role="presentation" unselectable="on" style="" class="x-btn-button x-btn-button-default-toolbar-large x-btn-text  x-btn-icon x-btn-icon-left x-btn-button-center ">...</span> is not clickable at point (518, 66). Other element would receive the click: <div role="presentation" class="x-mask x-border-box x-mask-fixed" id="ext-element-27" style="z-index: 50000;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F91C7]
+	(No symbol) [0x010F75D9]
+	(No symbol) [0x010F54CB]
+	(No symbol) [0x010F4AAF]
+	(No symbol) [0x010E99EF]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x010E9485]
+	(No symbol) [0x011146B4]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+2024-08-20 17:42:50,512 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:42:55,736 - functions.driver_management - INFO - Azioni di Reparto button is present. User is already logged in. Proceeding with post-login operations.
+2024-08-20 17:42:56,654 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 17:42:57,245 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 17:42:57,467 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 17:42:57,726 - functions.driver_management - INFO - Clicked on 'Stampa rilevazione mensile'
+2024-08-20 17:42:59,738 - functions.driver_management - INFO - Checkbox with name 'noteMensili' has ID 'checkbox-1350-inputEl'
+2024-08-20 17:42:59,767 - functions.driver_management - INFO - Clicked on checkbox with ID 'checkbox-1350-inputEl'
+2024-08-20 17:42:59,819 - functions.driver_management - INFO - Selected Nucleo D
+2024-08-20 17:42:59,952 - functions.driver_management - INFO - Clicked on the print button
+2024-08-20 17:43:14,609 - functions.driver_management - ERROR - Unexpected error: name 'traceback' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 13, in savepdf
+    iframe = WebDriverWait(driver, Attesa).until(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x0108D2E3]
+	(No symbol) [0x0111A64F]
+	(No symbol) [0x0112C686]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 143, in post_login_operations
+    savepdf(driver, nucleo, Attesa, change_month)
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 45, in savepdf
+    log(f"Error during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")
+                                                                  ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+
+2024-08-20 17:43:19,611 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:45:39,427 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 17:45:40,041 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:45:40,605 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:45:40,632 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 17:45:41,658 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 17:45:41,658 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:45:51,955 - functions.driver_management - INFO - Username field is visible, proceeding with login operations.
+2024-08-20 17:45:53,341 - functions.driver_management - INFO - Username entered
+2024-08-20 17:45:54,824 - functions.driver_management - INFO - Password entered
+2024-08-20 17:45:54,861 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 17:46:04,921 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 17:46:05,543 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 17:46:05,735 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 17:46:06,037 - functions.driver_management - INFO - Clicked on 'Stampa rilevazione mensile'
+2024-08-20 17:46:08,048 - functions.driver_management - INFO - Checkbox with name 'noteMensili' has ID 'checkbox-1350-inputEl'
+2024-08-20 17:46:08,077 - functions.driver_management - INFO - Clicked on checkbox with ID 'checkbox-1350-inputEl'
+2024-08-20 17:46:08,125 - functions.driver_management - INFO - Selected Nucleo A
+2024-08-20 17:46:08,257 - functions.driver_management - INFO - Clicked on the print button
+2024-08-20 17:46:11,308 - functions.driver_management - ERROR - Unexpected error: name 'traceback' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 13, in savepdf
+    iframe = WebDriverWait(driver, Attesa).until(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x0108D2E3]
+	(No symbol) [0x0111A64F]
+	(No symbol) [0x0112C686]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 144, in post_login_operations
+    savepdf(driver, nucleo, Attesa, change_month)
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 45, in savepdf
+    log(f"Error during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")
+                                                                  ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+
+2024-08-20 17:46:13,663 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 17:46:14,242 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:46:14,313 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:46:14,339 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 17:46:15,335 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 17:46:15,335 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:46:18,502 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 17:46:19,109 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:46:19,137 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:46:19,161 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 17:46:21,813 - functions.driver_management - ERROR - Error initializing driver: Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010E1075]
+	(No symbol) [0x010DBAE9]
+	(No symbol) [0x0111D9ED]
+	(No symbol) [0x0111D21A]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\driver_management.py", line 58, in initialize_driver
+    driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 212, in __init__
+    self.start_session(capabilities)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 299, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010E1075]
+	(No symbol) [0x010DBAE9]
+	(No symbol) [0x0111D9ED]
+	(No symbol) [0x0111D21A]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+2024-08-20 17:46:25,637 - functions.driver_management - INFO - Username field is visible, proceeding with login operations.
+2024-08-20 17:46:27,031 - functions.driver_management - INFO - Username entered
+2024-08-20 17:46:28,552 - functions.driver_management - INFO - Password entered
+2024-08-20 17:46:28,591 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 17:46:38,654 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 17:46:39,245 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 17:46:39,517 - functions.driver_management - ERROR - Unexpected error: Message: stale element reference: stale element not found
+  (Session info: chrome=127.0.6533.120); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010BEBF7]
+	(No symbol) [0x010BF3CE]
+	(No symbol) [0x010B6B47]
+	(No symbol) [0x010BF3F4]
+	(No symbol) [0x010B6B47]
+	(No symbol) [0x010B4EC5]
+	(No symbol) [0x010B7D0F]
+	(No symbol) [0x0112D74B]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 97, in post_login_operations
+    WebDriverWait(driver, 10).until(
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 252, in is_displayed
+    return self.parent.execute_script(f"/* isDisplayed */return ({isDisplayed_js}).apply(null, arguments);", self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 414, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=127.0.6533.120); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010BEBF7]
+	(No symbol) [0x010BF3CE]
+	(No symbol) [0x010B6B47]
+	(No symbol) [0x010BF3F4]
+	(No symbol) [0x010B6B47]
+	(No symbol) [0x010B4EC5]
+	(No symbol) [0x010B7D0F]
+	(No symbol) [0x0112D74B]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+2024-08-20 17:46:44,518 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:46:50,954 - functions.driver_management - INFO - Azioni di Reparto button is present. User is already logged in. Proceeding with post-login operations.
+2024-08-20 17:46:52,034 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 17:46:52,665 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 17:46:52,846 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 17:46:53,218 - functions.driver_management - INFO - Clicked on 'Stampa rilevazione mensile'
+2024-08-20 17:46:55,229 - functions.driver_management - INFO - Checkbox with name 'noteMensili' has ID 'checkbox-1350-inputEl'
+2024-08-20 17:46:55,259 - functions.driver_management - INFO - Clicked on checkbox with ID 'checkbox-1350-inputEl'
+2024-08-20 17:46:55,310 - functions.driver_management - INFO - Selected Nucleo B
+2024-08-20 17:46:55,680 - functions.driver_management - INFO - Clicked on the print button
+2024-08-20 17:47:33,080 - functions.driver_management - ERROR - Unexpected error: name 'traceback' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 13, in savepdf
+    iframe = WebDriverWait(driver, Attesa).until(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x0108D2E3]
+	(No symbol) [0x0111A64F]
+	(No symbol) [0x0112C686]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 144, in post_login_operations
+    savepdf(driver, nucleo, Attesa, change_month)
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 45, in savepdf
+    log(f"Error during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")
+                                                                  ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+
+2024-08-20 17:53:41,209 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 17:53:41,781 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:53:41,812 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:53:41,839 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 17:53:42,841 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 17:54:52,172 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 17:54:52,747 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:54:52,776 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:54:52,804 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 17:54:53,824 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 17:54:53,824 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:55:14,219 - functions.driver_management - INFO - Username field is visible, proceeding with login operations.
+2024-08-20 17:55:15,603 - functions.driver_management - INFO - Username entered
+2024-08-20 17:55:17,087 - functions.driver_management - INFO - Password entered
+2024-08-20 17:55:17,124 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 17:55:27,185 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 17:55:27,771 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 17:55:27,970 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 17:55:28,287 - functions.driver_management - INFO - Clicked on 'Stampa rilevazione mensile'
+2024-08-20 17:55:30,298 - functions.driver_management - INFO - Checkbox with name 'noteMensili' has ID 'checkbox-1350-inputEl'
+2024-08-20 17:55:30,328 - functions.driver_management - INFO - Clicked on checkbox with ID 'checkbox-1350-inputEl'
+2024-08-20 17:55:30,375 - functions.driver_management - INFO - Selected Nucleo A
+2024-08-20 17:55:30,508 - functions.driver_management - INFO - Clicked on the print button
+2024-08-20 17:55:36,574 - functions.driver_management - ERROR - Unexpected error: name 'traceback' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 13, in savepdf
+    iframe = WebDriverWait(driver, Attesa).until(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x0108D2E3]
+	(No symbol) [0x0111A64F]
+	(No symbol) [0x0112C686]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 144, in post_login_operations
+    savepdf(driver, nucleo, Attesa, change_month)
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 45, in savepdf
+    log(f"Error during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")
+                                                                  ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+
+2024-08-20 17:55:40,156 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 17:55:40,730 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:55:40,761 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 17:55:40,787 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 17:55:41,779 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 17:55:41,779 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:56:02,174 - functions.driver_management - INFO - Username field is visible, proceeding with login operations.
+2024-08-20 17:56:03,555 - functions.driver_management - INFO - Username entered
+2024-08-20 17:56:05,040 - functions.driver_management - INFO - Password entered
+2024-08-20 17:56:05,077 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 17:56:19,741 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 17:56:29,999 - functions.driver_management - ERROR - Timeout while trying to find element: Message: 
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F326F]
+	(No symbol) [0x010F34AB]
+	(No symbol) [0x0112EE42]
+	(No symbol) [0x01114464]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 89, in post_login_operations
+    magnifying_glass_icon = WebDriverWait(driver, 10).until(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F326F]
+	(No symbol) [0x010F34AB]
+	(No symbol) [0x0112EE42]
+	(No symbol) [0x01114464]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+2024-08-20 17:56:35,001 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:56:40,354 - functions.driver_management - INFO - Azioni di Reparto button is present. User is already logged in. Proceeding with post-login operations.
+2024-08-20 17:56:41,595 - functions.driver_management - ERROR - Unexpected error: Message: element click intercepted: Element <span id="button-1119-btnEl" data-ref="btnEl" role="presentation" unselectable="on" style="" class="x-btn-button x-btn-button-default-toolbar-large x-btn-text  x-btn-icon x-btn-icon-left x-btn-button-center ">...</span> is not clickable at point (518, 66). Other element would receive the click: <div role="presentation" class="x-mask x-border-box x-mask-fixed" id="ext-element-27" style="z-index: 50000;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F91C7]
+	(No symbol) [0x010F75D9]
+	(No symbol) [0x010F54CB]
+	(No symbol) [0x010F4AAF]
+	(No symbol) [0x010E99EF]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x010E9485]
+	(No symbol) [0x011146B4]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 86, in post_login_operations
+    azionib.click()
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span id="button-1119-btnEl" data-ref="btnEl" role="presentation" unselectable="on" style="" class="x-btn-button x-btn-button-default-toolbar-large x-btn-text  x-btn-icon x-btn-icon-left x-btn-button-center ">...</span> is not clickable at point (518, 66). Other element would receive the click: <div role="presentation" class="x-mask x-border-box x-mask-fixed" id="ext-element-27" style="z-index: 50000;">...</div>
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x010F91C7]
+	(No symbol) [0x010F75D9]
+	(No symbol) [0x010F54CB]
+	(No symbol) [0x010F4AAF]
+	(No symbol) [0x010E99EF]
+	(No symbol) [0x0111441C]
+	(No symbol) [0x010E9485]
+	(No symbol) [0x011146B4]
+	(No symbol) [0x0112CB8D]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+2024-08-20 17:56:46,596 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 17:56:52,704 - functions.driver_management - INFO - Azioni di Reparto button is present. User is already logged in. Proceeding with post-login operations.
+2024-08-20 17:56:53,765 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 17:56:54,386 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 17:56:54,549 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 17:56:54,753 - functions.driver_management - INFO - Clicked on 'Stampa rilevazione mensile'
+2024-08-20 17:56:56,764 - functions.driver_management - INFO - Checkbox with name 'noteMensili' has ID 'checkbox-1350-inputEl'
+2024-08-20 17:56:56,793 - functions.driver_management - INFO - Clicked on checkbox with ID 'checkbox-1350-inputEl'
+2024-08-20 17:56:56,840 - functions.driver_management - INFO - Selected Nucleo C
+2024-08-20 17:56:56,999 - functions.driver_management - INFO - Clicked on the print button
+2024-08-20 17:56:59,026 - functions.driver_management - ERROR - Unexpected error: name 'traceback' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 13, in savepdf
+    iframe = WebDriverWait(driver, Attesa).until(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x0108D2E3]
+	(No symbol) [0x0111A64F]
+	(No symbol) [0x0112C686]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 144, in post_login_operations
+    savepdf(driver, nucleo, Attesa, change_month)
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 45, in savepdf
+    log(f"Error during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")
+                                                                  ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+
+2024-08-20 17:57:04,027 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 18:11:04,598 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 18:11:05,229 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 18:11:05,260 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 18:11:05,285 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 18:11:06,293 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 18:11:06,294 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 18:11:26,685 - functions.driver_management - INFO - Username field is visible, proceeding with login operations.
+2024-08-20 18:11:28,064 - functions.driver_management - INFO - Username entered
+2024-08-20 18:11:29,546 - functions.driver_management - INFO - Password entered
+2024-08-20 18:11:29,582 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 18:11:39,671 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 18:11:40,264 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 18:11:40,481 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 18:11:40,860 - functions.driver_management - INFO - Clicked on 'Stampa rilevazione mensile'
+2024-08-20 18:11:42,872 - functions.driver_management - INFO - Checkbox with name 'noteMensili' has ID 'checkbox-1350-inputEl'
+2024-08-20 18:11:42,902 - functions.driver_management - INFO - Clicked on checkbox with ID 'checkbox-1350-inputEl'
+2024-08-20 18:11:42,953 - functions.driver_management - INFO - Selected Nucleo A
+2024-08-20 18:11:43,111 - functions.driver_management - INFO - Clicked on the print button
+2024-08-20 18:11:44,130 - functions.driver_management - ERROR - Unexpected error: name 'traceback' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 13, in savepdf
+    iframe = WebDriverWait(driver, Attesa).until(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x0108D2E3]
+	(No symbol) [0x0111A64F]
+	(No symbol) [0x0112C686]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 116, in post_login_operations
+    savepdf(driver, nucleo, Attesa, change_month)
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 45, in savepdf
+    log(f"Error during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")
+                                                                  ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+
+2024-08-20 18:16:41,984 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 18:16:42,586 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 18:16:42,617 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 18:16:42,642 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 18:16:43,629 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 18:16:43,629 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 18:17:04,015 - functions.driver_management - INFO - Username field is visible, proceeding with login operations.
+2024-08-20 18:17:05,394 - functions.driver_management - INFO - Username entered
+2024-08-20 18:17:06,878 - functions.driver_management - INFO - Password entered
+2024-08-20 18:17:06,915 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 18:17:17,410 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 18:17:17,973 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 18:17:18,214 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 18:17:18,451 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 18:17:19,439 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 18:17:19,440 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 18:17:39,847 - functions.driver_management - INFO - Username field is visible, proceeding with login operations.
+2024-08-20 18:17:41,231 - functions.driver_management - INFO - Username entered
+2024-08-20 18:17:42,715 - functions.driver_management - INFO - Password entered
+2024-08-20 18:17:42,752 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 18:17:52,825 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 18:17:53,408 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 18:17:53,614 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 18:17:53,818 - functions.driver_management - INFO - Clicked on 'Stampa rilevazione mensile'
+2024-08-20 18:17:55,829 - functions.driver_management - INFO - Checkbox with name 'noteMensili' has ID 'checkbox-1350-inputEl'
+2024-08-20 18:17:55,857 - functions.driver_management - INFO - Clicked on checkbox with ID 'checkbox-1350-inputEl'
+2024-08-20 18:17:55,902 - functions.driver_management - INFO - Selected Nucleo A
+2024-08-20 18:17:55,907 - functions.driver_management - ERROR - Unexpected error: name 'select_next_month' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 101, in post_login_operations
+    select_next_month(driver)
+    ^^^^^^^^^^^^^^^^^
+NameError: name 'select_next_month' is not defined
+
+2024-08-20 18:18:00,907 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 18:18:06,200 - functions.driver_management - INFO - Azioni di Reparto button is present. User is already logged in. Proceeding with post-login operations.
+2024-08-20 18:18:07,146 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 18:18:07,722 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 18:18:07,931 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 18:18:08,204 - functions.driver_management - INFO - Clicked on 'Stampa rilevazione mensile'
+2024-08-20 18:18:10,212 - functions.driver_management - INFO - Checkbox with name 'noteMensili' has ID 'checkbox-1350-inputEl'
+2024-08-20 18:18:10,239 - functions.driver_management - INFO - Clicked on checkbox with ID 'checkbox-1350-inputEl'
+2024-08-20 18:18:10,284 - functions.driver_management - INFO - Selected Nucleo B
+2024-08-20 18:18:10,288 - functions.driver_management - ERROR - Unexpected error: name 'select_next_month' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 101, in post_login_operations
+    select_next_month(driver)
+    ^^^^^^^^^^^^^^^^^
+NameError: name 'select_next_month' is not defined
+
+2024-08-20 18:24:20,929 - WDM - INFO - ====== WebDriver manager ======
+2024-08-20 18:24:21,517 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 18:24:21,547 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2024-08-20 18:24:21,574 - WDM - INFO - Driver [C:\Users\pbpao\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe] found in cache
+2024-08-20 18:24:22,578 - functions.driver_management - INFO - Driver initialized successfully
+2024-08-20 18:24:22,579 - functions.driver_management - INFO - Navigating to URL: https://pvc003.zucchettihc.it:4445/cba/login.html
+2024-08-20 18:24:42,966 - functions.driver_management - INFO - Username field is visible, proceeding with login operations.
+2024-08-20 18:24:44,352 - functions.driver_management - INFO - Username entered
+2024-08-20 18:24:45,835 - functions.driver_management - INFO - Password entered
+2024-08-20 18:24:45,871 - functions.driver_management - INFO - Login credentials entered and login button clicked
+2024-08-20 18:24:55,933 - functions.driver_management - INFO - Clicked on Azioni di Reparto
+2024-08-20 18:24:56,517 - functions.driver_management - INFO - Clicked on lente d'ingrandimento
+2024-08-20 18:24:56,717 - functions.driver_management - INFO - Clicked on Stampa Terapie
+2024-08-20 18:24:57,085 - functions.driver_management - INFO - Clicked on 'Stampa rilevazione mensile'
+2024-08-20 18:24:59,096 - functions.driver_management - INFO - Checkbox with name 'noteMensili' has ID 'checkbox-1350-inputEl'
+2024-08-20 18:24:59,124 - functions.driver_management - INFO - Clicked on checkbox with ID 'checkbox-1350-inputEl'
+2024-08-20 18:24:59,169 - functions.driver_management - INFO - Selected Nucleo A
+2024-08-20 18:24:59,181 - functions.driver_management - INFO - Current month: Agosto
+2024-08-20 18:24:59,181 - functions.driver_management - INFO - Next month to select: Settembre
+2024-08-20 18:24:59,224 - functions.driver_management - INFO - Dropdown opened
+2024-08-20 18:24:59,261 - functions.driver_management - INFO - Selected Settembre from the dropdown
+2024-08-20 18:24:59,274 - functions.driver_management - INFO - Current year is 2024, incrementing to 2025
+2024-08-20 18:24:59,321 - functions.driver_management - INFO - Year successfully incremented to 2025
+2024-08-20 18:24:59,662 - functions.driver_management - INFO - Clicked on the print button
+2024-08-20 18:25:13,309 - functions.driver_management - ERROR - Unexpected error: name 'traceback' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 13, in savepdf
+    iframe = WebDriverWait(driver, Attesa).until(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\pbpao\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+	GetHandleVerifier [0x011B8923+23283]
+	(No symbol) [0x0117E934]
+	(No symbol) [0x010B0733]
+	(No symbol) [0x0108D2E3]
+	(No symbol) [0x0111A64F]
+	(No symbol) [0x0112C686]
+	(No symbol) [0x011141B6]
+	(No symbol) [0x010E8017]
+	(No symbol) [0x010E890D]
+	GetHandleVerifier [0x012AA5F3+1013699]
+	GetHandleVerifier [0x012B3E4C+1052700]
+	GetHandleVerifier [0x012AD4B4+1025668]
+	GetHandleVerifier [0x011DEA2B+179195]
+	(No symbol) [0x01186833]
+	(No symbol) [0x01183198]
+	(No symbol) [0x01183337]
+	(No symbol) [0x0117B4BE]
+	BaseThreadInitThunk [0x75FA7BA9+25]
+	RtlInitializeExceptionChain [0x7724C10B+107]
+	RtlClearBits [0x7724C08F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\route.py", line 116, in post_login_operations
+    savepdf(driver, nucleo, Attesa, change_month)
+  File "C:\Users\pbpao\Desktop\ZUCCscraper\functions\pdf_handling.py", line 45, in savepdf
+    log(f"Error during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")
+                                                                  ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+

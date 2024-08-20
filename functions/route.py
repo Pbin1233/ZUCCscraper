@@ -5,44 +5,52 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from .driver_management import initialize_driver, log
-from .element_interaction import (
-    click_radio_button_by_label,
-    click_checkbox_by_name,
-    wait_for_element_to_be_visible,
-    slow_typing
-)
+from .element_interaction import slow_typing, select_next_month, select_next_year_if_december
 from .pdf_handling import savepdf
+from .login import login
 from config.config import download_dir, user_data_dir, url, username, password, prossimo_mese_dir
 
 
-def route(driver, nucleo, Attesa, change_month):
+def start_route(driver, nucleo, Attesa, change_month):
     log(f"Navigating to URL: {url}", "INFO")
     driver.get(url)
     log(f"Current URL after navigation: {driver.current_url}", "DEBUG")
-    time.sleep(10)
+    time.sleep(5)
 
     try:
-        azionib = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, "//span[text()='Azioni di Reparto']/ancestor::span[contains(@id, 'button-') and contains(@id, '-btnEl')]"))
-        )
-        log("Azioni di Reparto button is present, clicking it", "INFO")
-        azionib.click()
-        log("Clicked on Azioni di Reparto", "INFO")
-    except TimeoutException:
-        log("Azioni di Reparto button not found, proceeding to login", "INFO")
-        username_field = wait_for_element_to_be_visible(driver, By.NAME, 'username')
-        slow_typing(username_field, username)
-        log("Username entered", "INFO")
-        password_field = wait_for_element_to_be_visible(driver, By.NAME, 'password')
-        slow_typing(password_field, password)
-        log("Password entered", "INFO")
-        login_button = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, "//span[text()='Login']/ancestor::span[contains(@id, '-btnEl')]"))
-        )
-        login_button.click()
-        log("Login credentials entered and login button clicked", "INFO")
-        time.sleep(10)
+        # Check if the username field is present and visible
+        username_element = driver.find_element(By.NAME, 'username')
+        username_visible = username_element.is_displayed()
 
+        # Check if the Azioni di Reparto button is present (post-login indicator)
+        azionib_present = False
+        try:
+            WebDriverWait(driver, 15).until(
+                EC.presence_of_element_located((By.XPATH, "//span[text()='Azioni di Reparto']/ancestor::span[contains(@id, 'button-') and contains(@id, '-btnEl')]"))
+            )
+            azionib_present = True
+        except TimeoutException:
+            azionib_present = False
+
+        if username_visible:
+            log("Username field is visible, proceeding with login operations.", "INFO")
+            login(driver, username, password)
+            time.sleep(10) 
+            post_login_operations(driver, nucleo, Attesa, change_month)
+        elif azionib_present:
+            log("Azioni di Reparto button is present. User is already logged in. Proceeding with post-login operations.", "INFO")
+            post_login_operations(driver, nucleo, Attesa, change_month)
+        else:
+            log("Could not determine the state of the application. Retrying or throwing an error.", "ERROR")
+
+    except Exception as e:
+        log(f"Unexpected error: {e}\n{traceback.format_exc()}", "ERROR")
+    finally:
+        time.sleep(5)
+
+def post_login_operations(driver, nucleo, Attesa, change_month):
+    try:
+        WebDriverWait(driver, 15).until(EC.invisibility_of_element_located((By.ID, "ext-element-27")))
         azionib = WebDriverWait(driver, 15).until(
             EC.element_to_be_clickable((By.XPATH, "//span[text()='Azioni di Reparto']/ancestor::span[contains(@id, 'button-') and contains(@id, '-btnEl')]"))
         )
@@ -50,7 +58,6 @@ def route(driver, nucleo, Attesa, change_month):
         azionib.click()
         log("Clicked on Azioni di Reparto", "INFO")
 
-    try:
         magnifying_glass_icon = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable(
                 (By.XPATH, "//label[contains(text(), 'Stampe')]/following-sibling::img[@src='/cba/css/generali/images/generali/open-details.svg']")
@@ -64,10 +71,24 @@ def route(driver, nucleo, Attesa, change_month):
         ).click()
         log("Clicked on Stampa Terapie", "INFO")
 
-        click_radio_button_by_label(driver, "Stampa rilevazione mensile")
+        label_text = 'Stampa rilevazione mensile'
+        label = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, f"//label[contains(text(), '{label_text}') or contains(text(), '{label_text.replace(' ', '\xa0')}')]"))
+        )
+        radio_button = driver.find_element(By.ID, label.get_attribute("for"))
+        radio_button.click()
+        log(f"Clicked on '{label_text}'", "INFO")
         time.sleep(2)
-        click_checkbox_by_name(driver, 'noteMensili')
-        log(f"Clicked on Stampa anche note", "INFO")
+        
+        checkbox_name = 'noteMensili'
+        checkbox_id = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, f"//input[@name='{checkbox_name}']"))
+        ).get_attribute("id")
+
+        log(f"Checkbox with name '{checkbox_name}' has ID '{checkbox_id}'", "INFO")
+
+        driver.find_element(By.ID, checkbox_id).click()
+        log(f"Clicked on checkbox with ID '{checkbox_id}'", "INFO")
 
         parent_div = driver.find_element(By.XPATH, f"//span[text()='NUCLEO {nucleo}']/parent::div")
         checkbox = parent_div.find_element(By.CLASS_NAME, "x-tree-checkbox")
@@ -94,20 +115,17 @@ def route(driver, nucleo, Attesa, change_month):
 
         savepdf(driver, nucleo, Attesa, change_month)
         time.sleep(5)
-
     except TimeoutException as e:
         log(f"Timeout while trying to find element: {e}\n{traceback.format_exc()}", "ERROR")
     except NoSuchElementException as e:
         log(f"Element not found: {e}\n{traceback.format_exc()}", "ERROR")
     except Exception as e:
         log(f"Unexpected error: {e}\n{traceback.format_exc()}", "ERROR")
-    finally:
-        time.sleep(5)
 
 if __name__ == "__main__":
     driver = initialize_driver()
     try:
-        SRM(driver, "Sample Nucleo", 5, False)
+        route(driver, "Sample Nucleo", 5, False)
     finally:
         log("Quitting the driver", "INFO")
         driver.quit()

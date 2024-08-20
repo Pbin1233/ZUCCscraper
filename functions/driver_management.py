@@ -1,5 +1,3 @@
-# driver_management.py
-
 import os
 import time
 import logging
@@ -10,9 +8,12 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from config.config import download_dir, user_data_dir
 
+# Set log level based on environment variable
+log_level = os.getenv('LOG_LEVEL', 'INFO').upper()
+
 # Set up basic configuration for logging
 logging.basicConfig(
-    level=logging.INFO,  # Capture all log levels
+    level=getattr(logging, log_level, logging.INFO),  # Use the environment variable
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
         logging.FileHandler("app.log"),  # Log to file
@@ -43,6 +44,8 @@ def initialize_driver():
     chrome_options.add_argument('--start-maximized')
     chrome_options.add_argument('--window-size=1920x1080')
     chrome_options.add_argument(f"user-data-dir={user_data_dir}")
+    chrome_options.add_argument('--disable-software-rasterizer')
+#    chrome_options.add_argument('--headless')
 
     chrome_options.add_experimental_option('prefs', {
         "download.default_directory": download_dir,
