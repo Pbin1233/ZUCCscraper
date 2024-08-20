@@ -1,12 +1,13 @@
 import os
 import time
 import requests
+import traceback
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from .driver_management import log
-from config.config import download_dir, prossimo_mese_dir
+from config.config import download_dir, mese_successivo_dir
 
 def savepdf(driver, Nucleo, Attesa, change_month):
     try:
@@ -22,7 +23,7 @@ def savepdf(driver, Nucleo, Attesa, change_month):
         pdf_url = pdf_link.get_attribute('href')
         log(f"PDF link found: {pdf_url}", "INFO")
 
-        save_dir = prossimo_mese_dir if change_month else download_dir
+        save_dir = mese_successivo_dir if change_month else download_dir
         if not os.path.exists(save_dir):
             os.makedirs(save_dir)
 

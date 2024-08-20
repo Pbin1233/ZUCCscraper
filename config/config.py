@@ -6,7 +6,7 @@ load_dotenv()
 
 # Configuration for download directory and Chrome user data directory
 download_dir = os.getenv('DOWNLOAD_DIR')
-prossimo_mese_dir = os.path.join(download_dir, "Prossimo mese")
+mese_successivo_dir = os.path.join(download_dir, "Mese successivo")
 user_data_dir = os.getenv('USER_DATA_DIR')
 
 # URL for the login page
@@ -18,4 +18,4 @@ password = os.getenv('PASSWORD')
 
 # Nuclei and their respective wait times
 nuclei = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'I']
-attesa = [90, 200, 200, 200, 200, 200, 200, 200]
+attesa = [150, 300, 300, 300, 300, 300, 300, 300]

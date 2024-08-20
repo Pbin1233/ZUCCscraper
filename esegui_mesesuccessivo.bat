@@ -26,4 +26,4 @@ if %DIFF% lss 3 (
     echo Not the last three days of the month. Exiting.
     python "%~dp0main.py" true
 )
-pause
+exit
