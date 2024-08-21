@@ -10,7 +10,7 @@ mese_successivo_dir = os.path.join(download_dir, "Mese successivo")
 user_data_dir = os.getenv('USER_DATA_DIR')
 
 # URL for the login page
-url = 'https://pvc003.zucchettihc.it:4445/cba/login.html'
+url = os.getenv('URL')
 
 # User credentials
 username = os.getenv('APP_USERNAME')
