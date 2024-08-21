@@ -11,22 +11,22 @@ from config.config import download_dir, mese_successivo_dir
 
 def savepdf(driver, Nucleo, Attesa, change_month):
     try:
+        # Wait until the iframe with the PDF is present
         iframe = WebDriverWait(driver, Attesa).until(
-           EC.presence_of_element_located((By.TAG_NAME, 'iframe'))
+            EC.presence_of_element_located((By.TAG_NAME, 'iframe'))
         )
-        driver.switch_to.frame(iframe)
-        log("Switched to the iframe", "INFO")
+        log("Iframe detected", "INFO")
 
-        pdf_link = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, "//a[contains(@href, '.pdf')]"))
-        )
-        pdf_url = pdf_link.get_attribute('href')
+        # Get the src attribute of the iframe which contains the PDF URL
+        pdf_url = iframe.get_attribute('src')
         log(f"PDF link found: {pdf_url}", "INFO")
 
+        # Determine the save directory based on change_month flag
         save_dir = mese_successivo_dir if change_month else download_dir
         if not os.path.exists(save_dir):
             os.makedirs(save_dir)
 
+        # Download the PDF file
         response = requests.get(pdf_url, verify=False)
         if response.status_code == 200:
             file_path = os.path.join(save_dir, f"Nucleo {Nucleo}.pdf")
@@ -37,6 +37,7 @@ def savepdf(driver, Nucleo, Attesa, change_month):
             log(f"Failed to download PDF. Status code: {response.status_code}", "ERROR")
 
         time.sleep(5)
+
 
     except TimeoutException as e:
         log(f"Timeout during Stampa function for Nucleo {Nucleo}: {e}\n{traceback.format_exc()}", "ERROR")

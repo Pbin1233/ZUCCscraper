@@ -16,42 +16,45 @@ from functions.case_specific import get_missing_nuclei, all_files_downloaded
 
 
 def start_route(driver, nucleo, Attesa, change_month):
-    log(f"Navigating to URL: {url}", "INFO")
-    driver.get(url)
-    log(f"Current URL after navigation: {driver.current_url}", "DEBUG")
-    time.sleep(5)
-
-    try:
-        # Check if the username field is present and visible
-        username_element = driver.find_element(By.NAME, 'username')
-        username_visible = username_element.is_displayed()
-
-        # Check if the Azioni di Reparto button is present (post-login indicator)
-        azionib_present = False
-        try:
-            WebDriverWait(driver, 15).until(
-                EC.presence_of_element_located((By.XPATH, "//span[text()='Azioni di Reparto']/ancestor::span[contains(@id, 'button-') and contains(@id, '-btnEl')]"))
-            )
-            azionib_present = True
-        except TimeoutException:
-            azionib_present = False
-
-        if username_visible:
-            log("Username field is visible, proceeding with login operations.", "INFO")
-            login(driver, username, password)
-            time.sleep(10) 
-            post_login_operations(driver, nucleo, Attesa, change_month)
-        elif azionib_present:
-            log("Azioni di Reparto button is present. User is already logged in. Proceeding with post-login operations.", "INFO")
-            post_login_operations(driver, nucleo, Attesa, change_month)
-        else:
-            log("Could not determine the state of the application. Retrying or throwing an error.", "ERROR")
-
-    except Exception as e:
-        log(f"Unexpected error: {e}\n{traceback.format_exc()}", "ERROR")
-    finally:
+    while True:  # Retry loop in case of a timeout
+        log(f"Navigating to URL: {url}", "INFO")
+        driver.get(url)
+        log(f"Current URL after navigation: {driver.current_url}", "DEBUG")
         time.sleep(5)
 
+        try:
+            # Wait until either the username field or the Azioni di Reparto button is visible
+            element_present = WebDriverWait(driver, 30).until(
+                EC.any_of(
+                    EC.visibility_of_element_located((By.NAME, 'username')),
+                    EC.presence_of_element_located((By.XPATH, "//span[text()='Azioni di Reparto']/ancestor::span[contains(@id, 'button-') and contains(@id, '-btnEl')]"))
+                )
+            )
+
+            # Check which element became visible
+            if EC.visibility_of_element_located((By.NAME, 'username'))(driver):
+                log("Username field is visible, proceeding with login operations.", "INFO")
+                login(driver, username, password)
+                time.sleep(10)
+                post_login_operations(driver, nucleo, Attesa, change_month)
+                break  # Exit the loop since operations are complete
+            elif EC.presence_of_element_located((By.XPATH, "//span[text()='Azioni di Reparto']/ancestor::span[contains(@id, 'button-') and contains(@id, '-btnEl')]"))(driver):
+                log("Azioni di Reparto button is present. User is already logged in. Proceeding with post-login operations.", "INFO")
+                post_login_operations(driver, nucleo, Attesa, change_month)
+                break  # Exit the loop since operations are complete
+            else:
+                log("Neither username nor Azioni di Reparto button became visible. Retrying.", "WARNING")
+
+        except TimeoutException:
+            log("Timeout occurred while waiting for elements. Retrying from the beginning.", "WARNING")
+            continue  # Retry the process from the start
+        except Exception as e:
+            log(f"Unexpected error: {e}\n{traceback.format_exc()}", "ERROR")
+            break  # Exit loop if an unexpected error occurs
+
+        finally:
+            time.sleep(5)
+            
 def post_login_operations(driver, nucleo, Attesa, change_month):
     try:
         time.sleep(10)
@@ -62,6 +65,8 @@ def post_login_operations(driver, nucleo, Attesa, change_month):
         log(f"Element found for 'Azioni di Reparto': {azionib}", "DEBUG")
         azionib.click()
         log("Clicked on Azioni di Reparto", "INFO")
+        time.sleep(5)
+
 
         magnifying_glass_icon = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable(
@@ -80,8 +85,8 @@ def post_login_operations(driver, nucleo, Attesa, change_month):
         label = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, f"//label[contains(text(), '{label_text}') or contains(text(), '{label_text.replace(' ', '\xa0')}')]"))
         )
-        radio_button = driver.find_element(By.ID, label.get_attribute("for"))
-        radio_button.click()
+        time.sleep(2)
+        driver.find_element(By.ID, label.get_attribute("for")).click()
         log(f"Clicked on '{label_text}'", "INFO")
         time.sleep(2)
         
@@ -90,10 +95,10 @@ def post_login_operations(driver, nucleo, Attesa, change_month):
             EC.presence_of_element_located((By.XPATH, f"//input[@name='{checkbox_name}']"))
         ).get_attribute("id")
 
-        log(f"Checkbox with name '{checkbox_name}' has ID '{checkbox_id}'", "INFO")
+        log(f"Checkbox with name '{checkbox_name}' has ID '{checkbox_id}'", "DEBUG")
 
         driver.find_element(By.ID, checkbox_id).click()
-        log(f"Clicked on checkbox with ID '{checkbox_id}'", "INFO")
+        log(f"Clicked on Stampa anche note", "INFO")
 
         parent_div = driver.find_element(By.XPATH, f"//span[text()='NUCLEO {nucleo}']/parent::div")
         checkbox = parent_div.find_element(By.CLASS_NAME, "x-tree-checkbox")

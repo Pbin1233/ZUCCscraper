@@ -42,10 +42,14 @@ def initialize_driver():
     chrome_options.add_argument('--disable-gpu')
     chrome_options.add_argument('--disable-popup-blocking')
     chrome_options.add_argument('--start-maximized')
+    chrome_options.add_argument('--remote-debugging-port=9222')
     chrome_options.add_argument('--window-size=1920x1080')
+    chrome_options.add_argument('--force-device-scale-factor=1')
     chrome_options.add_argument(f"user-data-dir={user_data_dir}")
     chrome_options.add_argument('--disable-software-rasterizer')
-#    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--no-first-run')
+    chrome_options.add_argument('--incognito') 
+    chrome_options.add_argument('--headless')
 
     chrome_options.add_experimental_option('prefs', {
         "download.default_directory": download_dir,
